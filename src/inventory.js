@@ -12,7 +12,8 @@ export const catalog = [
   { sku: "PU-2002", name: "Luftfilter", priceCents: 1490, stock: 85 },
   { sku: "PU-3001", name: "Zündkerze", priceCents: 650, stock: 0 },
   { sku: "PU-4001", name: "Scheibenwischer (Paar)", priceCents: 1990, stock: 64 },
-];
+  { sku: "PU-5001", name: "Batterie 12 V", priceCents: 7999, stock: 40}
+  ];
 
 /** Sucht ein Teil anhand der Artikelnummer (SKU). Gibt undefined zurück, wenn es das Teil nicht gibt. */
 export function findPart(sku) {

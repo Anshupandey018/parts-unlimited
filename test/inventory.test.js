@@ -37,3 +37,10 @@ test("lehnt unbekannte Artikel und ungültige Mengen ab", () => {
 test("formatiert Beträge in Euro", () => {
   assert.equal(formatEuro(4990).replace(/\s/g, " "), "49,90 €");
 });
+
+test("findet die neue Batterie", () => {
+  const part = findPart("PU-5001");
+
+  assert.ok(part);
+  assert.equal(part.name, "Batterie 12 V");
+});
