@@ -17,7 +17,7 @@ function renderPage() {
     .map(
       (p) =>
         `<tr><td>${p.sku}</td><td>${p.name}</td><td>${formatEuro(p.priceCents)}</td><td>${
-          p.stock > 0 ? p.stock : "ausverkauft"
+          p.stock > 0 ? p.stock : '<strong style="color: red;">ausverkauft</strong>'
         }</td></tr>`,
     )
     .join("");
