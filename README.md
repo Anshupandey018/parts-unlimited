@@ -26,3 +26,13 @@ src/inventory.js   Katalog, Lagerprüfung, Preisberechnung
 src/server.js      Webserver
 test/              Tests mit dem eingebauten Test-Runner von Node
 ```
+
+
+## Definition of Done
+
+Ein Issue gilt als abgeschlossen, wenn folgende Kriterien erfüllt sind:
+- Die Implementierung ist abgeschlossen.
+- Die erforderlichen Tests sind geschrieben und erfolgreich bestanden.
+- Der Code wurde durch einen Pull Request überprüft.
+- Der Pull Request wurde erfolgreich in den main-Branch gemergt.
+- Das zugehörige Issue ist im Pull Request mit `Closes #<nummer>` verknüpft.

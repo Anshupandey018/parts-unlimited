@@ -26,3 +26,9 @@ test("unbekannte Pfade liefern 404", async () => {
   const res = await fetch(`${base}/gibts-nicht`);
   assert.equal(res.status, 404);
 });
+test("zeigt ausverkaufte Teile an", async () => {
+  const res = await fetch(`${base}/`);
+  const html = await res.text();
+
+  assert.match(html, /ausverkauft/);
+});
